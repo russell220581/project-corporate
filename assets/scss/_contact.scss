@@ -1,0 +1,57 @@
+/* Contact Area CSS */
+.contact-area {
+    .contact-wrap {
+        .contact-info {
+            display: grid; 
+            align-items: center;
+            grid-gap: 1.5rem;
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+
+                i {
+                    width: 3rem;
+                    height: 3rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    font-size: 1.25rem;
+                    background-color: $primary;
+                    color: $white;
+                    border-radius: 0.125rem;
+
+                    @include breakpoint-up(large) {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        line-height: 3.5rem;
+                        font-size: 1.375rem;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.25rem;
+                    line-height: 1.4;
+                    
+                    span {
+                        display: block;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                    }
+                }
+
+                &:not(:first-child) {                    
+                    h4 {
+                        span {
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+
+            @include breakpoint-up(medium) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}

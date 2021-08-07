@@ -1,0 +1,16 @@
+/* Partner Area CSS */
+.partner-area {
+    background-color: $bg_gray;
+    padding: 3rem 0;
+
+    .partner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.25rem;
+
+        .partner-item {
+            flex: 1 1 10rem;
+        }
+    }
+}

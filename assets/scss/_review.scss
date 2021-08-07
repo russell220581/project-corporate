@@ -1,0 +1,82 @@
+/* Review Area CSS */
+.review-area {
+    background-image: url(../img/testimonials/test_back.jpg);
+    background-attachment: scroll;
+
+    .review-wrap {
+        .review-item {
+            border: 0.0625rem solid $bg_gray;
+            text-align: center;
+            padding: 1.875rem;
+            position: relative;
+
+            i {
+                font-size: 3.125rem;
+                margin-bottom: 1.75rem;
+            }
+
+            p {
+                font-size: 0.875rem;
+                line-height: 1.7;
+            }
+
+            .author-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 12rem;
+                margin: 1.5rem auto 0;
+
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    line-height: 1.4;
+
+                    span {
+                        display: block;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .slick-slide {
+            margin: 0 1rem;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $primary;
+            color: $white;
+            border: 0;
+            padding: 0.625rem 0.75rem;
+            cursor: pointer;
+            transition: background-color 250ms linear;
+            
+            i {
+                font-size: 1.25rem;
+            }
+
+            &.slick-prev {
+                left: -3.5rem;
+            }
+
+            &.slick-next {
+                right: -3.5rem;
+            }
+
+            &:hover {
+                background-color: $dark_blue;
+            }
+        }
+    }
+}

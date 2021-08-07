@@ -1,0 +1,57 @@
+/* Subscribe Area CSS */
+.subscribe-area {
+    background-image: url(../img/subscribe/cta-bg.jpg);
+
+    .subscribe-wrap {
+        border: 1ps solid red;
+        max-width: 43.75rem;
+        margin: auto;
+
+        form {
+            position: relative;
+            font-family: inherit;
+
+            input {
+                border: 0.0625rem solid $gray;
+                border-radius: 3rem;
+                width: 100%;
+                padding: 0.875rem;
+                font-size: 0.875rem;
+
+                &:focus {
+                    outline: 0;
+                    border: 0.0625rem solid $primary;
+                }
+
+                &::placeholder {
+                    color: $shadow;
+                }
+
+            }
+    
+            input[type="submit"] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: auto;
+                padding: 0.875rem 1.25rem;
+                background-color: $primary;
+                color: $white;
+                border-color: transparent;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: background-color 250ms linear;
+
+                &:hover {
+                    background-color: $dark_blue;
+                }
+
+                @include breakpoint-up(medium) {
+                    padding: 0.875rem 1.875rem;
+                }
+            }
+        }
+        
+    }
+}

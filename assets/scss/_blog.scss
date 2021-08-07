@@ -1,0 +1,47 @@
+/* Blog Area CSS */
+.blog-area {
+    background-color: $bg_gray;
+
+    .blog-wrap {
+        .blog-item {
+            background-color: $white;
+            padding: 1rem;
+            box-shadow: $box_shadow;
+
+            .blog-image {
+                height: 15rem;
+            }
+
+            .blog-meta {
+                margin: 0.625rem 0 0.375rem;
+                
+                a {
+                    color: $dark;
+                    text-transform: capitalize;
+                    margin-right: 0.5rem;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .blog-content {
+                p {
+                    font-size: 0.875rem;
+                }
+
+                a {
+                    color: $dark;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $primary;
+                    }                    
+                }
+            }
+        }
+    }
+}

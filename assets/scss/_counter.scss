@@ -1,0 +1,42 @@
+/* Counter Area CSS */
+.counter-area {
+    background-image: url(../img/subscribe/cta-bg.jpg);
+    padding: 4rem 0;
+
+    @include breakpoint-up(medium) {
+        padding: 5rem 0;
+    }
+
+    .counter-wrap {
+        .counter-item {
+            text-align: center;
+
+            i {
+                width: 3.5rem;
+                height: 3.5rem;
+                line-height: 3.5rem;
+                border: 0.125rem solid $white;
+                border-radius: 50%;
+                font-size: 1.125rem;
+                transition: transform 250ms linear;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-top: 1rem;
+                
+                span {
+                    display: block;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    padding-bottom: 0.375rem;
+                }
+            }
+        }
+    }
+}
